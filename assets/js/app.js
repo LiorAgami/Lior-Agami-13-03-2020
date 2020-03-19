@@ -23,10 +23,10 @@ function WeatherForecast(options){
 	this.API_KEY = "8LI5Plq51ilw0XW3zlRrTuLsLPacsBST"; 
 	// this.API_KEY = "oG502lNuWSXWo6iGrUrvZdbqULVIytzx"; // optional key
 
-	this.GET_WEATHER_EP = 'http://dataservice.accuweather.com/currentconditions/v1/';
-	this.GET_LOCATION_EP = 'http://dataservice.accuweather.com/locations/v1/cities/autocomplete';
-	this.GET_5DAYFORECAST_EP = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/';
-	this.GET_GEOPOSITION_EP = 'http://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
+	this.GET_WEATHER_EP = 'https://dataservice.accuweather.com/currentconditions/v1/';
+	this.GET_LOCATION_EP = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete';
+	this.GET_5DAYFORECAST_EP = 'https://dataservice.accuweather.com/forecasts/v1/daily/5day/';
+	this.GET_GEOPOSITION_EP = 'https://dataservice.accuweather.com/locations/v1/cities/geoposition/search';
 	
 	this.errDict = {
 		'400':'Error - Parameters are in bad syntax or invalid',
