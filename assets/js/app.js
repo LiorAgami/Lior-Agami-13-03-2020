@@ -20,8 +20,8 @@ function WeatherForecast(options){
 	this.favLocations = {};
 	this.currLoctDtls = [];
 
-	this.API_KEY = "8LI5Plq51ilw0XW3zlRrTuLsLPacsBST"; 
-	// this.API_KEY = "oG502lNuWSXWo6iGrUrvZdbqULVIytzx"; // optional key
+	//this.API_KEY = "8LI5Plq51ilw0XW3zlRrTuLsLPacsBST"; 
+	this.API_KEY = "oG502lNuWSXWo6iGrUrvZdbqULVIytzx"; // optional key
 
 	this.GET_WEATHER_EP = 'https://dataservice.accuweather.com/currentconditions/v1/';
 	this.GET_LOCATION_EP = 'https://dataservice.accuweather.com/locations/v1/cities/autocomplete';
@@ -324,7 +324,7 @@ $.extend(WeatherForecast.prototype, {
 			const eng_letters_regex = new RegExp(/^[a-zA-Z]+$/);
 			let $errMsgEl = $('#searchErrText')
 			
-			if(e.target.c && !eng_letters_regex.test(e.target.value)) return $errMsgEl.addClass('show');
+			if(e.target.value && !eng_letters_regex.test(e.target.value)) return $errMsgEl.addClass('show');
 			if($errMsgEl.hasClass('show')) $errMsgEl.removeClass('show');
 
 			if( e && e.target.value.length < 2 ) {
